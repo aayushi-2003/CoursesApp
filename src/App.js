@@ -1,17 +1,17 @@
 import './App.css';
 import CoursesPage from './CoursesPage';
 import Hero from './Hero';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/profile" element={<CoursesPage/>} />
       </Routes>
-    </BrowserRouter>
+    </Router>
     </div>
   );
 }
