@@ -1,0 +1,66 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+.section{
+  padding: 50px 0 50px 0;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .btn{
+    padding: 6px 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn{
+    padding: 6px 20px;
+  }
+  .clip-bg-one{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  }
+  .clip-bg-two{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  }
+}
+@media screen and (max-width: 522px) {
+  .clip-bg-one{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  }
+  .clip-bg-two{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+  }
+}
+
+
+.app__gallery-images_container{
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.app__gallery-images_container::-webkit-scrollbar{
+  display: none;
+}
+
+.app__gallery-images_card {
+  position: relative;
+  min-width: 300px;
+  margin-right: 2rem;
+}
+
+.app__courses-images_card {
+  position: relative;
+  min-width: 300px;
+  margin-right: 3rem;
+}
