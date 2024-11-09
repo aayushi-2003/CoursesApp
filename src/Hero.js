@@ -1,8 +1,5 @@
 import heroImg from './assets/coursesimg.svg';
 import React, { useState } from 'react';
-import Logo from './assets/Logo.svg';
-import { RxHamburgerMenu } from "react-icons/rx";
-import { IoMdClose } from "react-icons/io";
 import LoginModal from './LoginModal';
 import Navbar from './Navbar';
 
@@ -20,15 +17,15 @@ const Hero = () => {
                 <h1 className='text-[20px] md:text-[30px] xl:text-[60px] text-white font-bold tracking-wide leading-snug'> Manage Your <span className='bg-gradient-to-r from-tertiary-blue to-accent bg-clip-text text-transparent'>Courses</span> Effortlessly</h1>
                 <p className='text-[14px] md:text-[16px] lg:text-[18px] xl:text-[18px] text-white text-opacity-85 text-center lg:text-justify'>Manage your course load in one place! Join our community of 1000+ users on a transformative journey.</p>
                 <div className='flex space-x-8'>
-                    <button className='bg-secondary-blue bg-opacity-40 rounded-[10px] xl:rounded-[10px] flex items-center justify-center w-[200px] h-[60px] shadow-md hover:shadow-lg hover:shadow-black/40 transition duration-300'>
-                        <p className='text-white text-[14px] md:text-[16px] lg:text-[14px] xl:text-[22px] '>How it works?</p>
+                    <button className='bg-secondary-blue bg-opacity-40 rounded-[10px] xl:rounded-[10px] flex items-center justify-center px-6 py-3 w-auto h-auto shadow-md hover:shadow-lg hover:shadow-black/40 transition duration-300'>
+                        <p className='text-white text-[14px] md:text-[16px] lg:text-[14px] xl:text-[20px] '>How it works?</p>
                     </button>
                     <button
-                        className="bg-tertiary-blue rounded-[10px] xl:rounded-[10px] flex items-center justify-center px-8 w-[200px] h-[60px] shadow-md hover:shadow-lg hover:shadow-secondary-blue transition duration-300"
+                        className="bg-tertiary-blue rounded-[10px] xl:rounded-[10px] flex items-center justify-center px-6 py-3 w-auto h-auto shadow-md hover:shadow-lg hover:shadow-secondary-blue transition duration-300"
                         onClick={openModal}
                         >
-                        <p className="text-primary-blue text-[14px] md:text-[16px] lg:text-[14px] xl:text-[22px] text-center">
-                            Sign Up
+                        <p className="text-primary-blue text-[14px] md:text-[16px] lg:text-[14px] xl:text-[20px] text-center font-semibold">
+                            Get Started
                         </p>
                     </button>
                 </div>

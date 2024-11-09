@@ -13,7 +13,7 @@ module.exports = {
         'secondary-pink': '#f9da12',
       },
       fontFamily:{
-        primary: ['Roboto', 'sans-serif'],
+        primary: ['Noto Sans', 'sans-serif'],
       }
     },
   },

@@ -28,8 +28,8 @@ const Navbar = () => {
         <>
             <div className='navbar-container w-full fixed top-0 left-0 bg-primary-blue lg:h-[60px] md:h-[80px] h-[65px] px-[65px] flex items-center justify-between z-[999]'>
                 <div className="logo flex items-center space-x-8">
-                    <img src={Logo} alt="logo" className='mb-2 lg:h-[20px] md:h-[26px] h-[24px]' />
-                    <h1 className="xl:text-[24px] text-[24px] text-white font-medium hidden lg:block">LearnWave</h1>
+
+                    <h1 className="xl:text-[24px] text-[24px] text-white font-medium hidden lg:block">CoursesMate</h1>
                 </div>
 
                 {isHeroPage && (

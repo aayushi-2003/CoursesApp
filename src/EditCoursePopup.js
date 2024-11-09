@@ -9,7 +9,8 @@ const EditCoursePopup = ({ course, onClose, onSave }) => {
   };
 
   return (
-    <div className="popup bg-white p-6 rounded shadow-lg fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
+    <div className="popup bg-white p-6 rounded-lg shadow-lg fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
       <h3 className="text-xl mb-4">Edit Course</h3>
       <form onSubmit={(e) => { e.preventDefault(); onSave(editedCourse); }}>
         <label>
@@ -25,10 +26,11 @@ const EditCoursePopup = ({ course, onClose, onSave }) => {
           <input type="text" name="semester" value={editedCourse.semester} onChange={handleChange} className="block border p-2 rounded mb-4"/>
         </label>
         <div className="flex gap-4">
-          <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">Save</button>
-          <button type="button" className="bg-gray-500 text-white px-4 py-2 rounded" onClick={onClose}>Cancel</button>
+          <button type="button" className="bg-gray-600 hover:bg-gray-500 text-white px-4 py-2 rounded" onClick={onClose}>Cancel</button>
+          <button type="submit" className="bg-blue-700 hover:bg-blue-600 text-white px-4 py-2 rounded">Save</button>
         </div>
       </form>
+    </div>
     </div>
   );
 };

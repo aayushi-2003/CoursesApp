@@ -3,7 +3,7 @@
 @import 'tailwindcss/utilities';
 
 *{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .section{
@@ -36,7 +36,7 @@
 }
 
 .inactive:hover {
-  background-color: #E5E7EB; 
+  background-color: #f0f1f3; 
   color: #374151;
 }
 
