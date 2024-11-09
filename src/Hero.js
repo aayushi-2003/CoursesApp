@@ -15,7 +15,7 @@ const Hero = () => {
         <Navbar/>
         <div className="bg-primary-blue h-[100vh] w-full z-[-10] px-[10px] md:px-[100px] xl:px-[150px] flex items-center justify-center">
 
-        <div className='hero-content flex items-center justify-between absolute top-[8rem] xl:top-[9rem] lg:space-x-[50px] xl:space-x-[135px]'>
+        <div className='hero-content flex items-center justify-between absolute lg:space-x-[50px] xl:space-x-[135px]'>
             <div className='w-[280px] md:w-[500px] xl:w-[650px] flex flex-col justify-center space-y-[24px] xl:space-y-[26px]'>
                 <h1 className='text-[20px] md:text-[30px] xl:text-[60px] text-white font-bold tracking-wide leading-snug'> Manage Your <span className='bg-gradient-to-r from-tertiary-blue to-accent bg-clip-text text-transparent'>Courses</span> Effortlessly</h1>
                 <p className='text-[14px] md:text-[16px] lg:text-[18px] xl:text-[18px] text-white text-opacity-85 text-center lg:text-justify'>Manage your course load in one place! Join our community of 1000+ users on a transformative journey.</p>

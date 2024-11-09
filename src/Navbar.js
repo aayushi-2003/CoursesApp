@@ -26,15 +26,17 @@ const Navbar = () => {
     
     return (
         <>
-            <div className='navbar-container w-full fixed top-1 left-0 bg-primary-blue lg:h-[60px] md:h-[80px] h-[65px] px-[65px] flex items-center justify-between z-[999]'>
+            <div className='navbar-container w-full fixed top-0 left-0 bg-primary-blue lg:h-[60px] md:h-[80px] h-[65px] px-[65px] flex items-center justify-between z-[999]'>
                 <div className="logo flex items-center space-x-8">
                     <img src={Logo} alt="logo" className='mb-2 lg:h-[20px] md:h-[26px] h-[24px]' />
                     <h1 className="xl:text-[24px] text-[24px] text-white font-medium hidden lg:block">LearnWave</h1>
                 </div>
 
+                {isHeroPage && (
                 <div className='absolute right-12 cursor-pointer md:hidden text-white' onClick={() => setToggleMenu(!toggleMenu)}>
                     {toggleMenu ? (<IoMdClose className='h-7 w-7'/>) : <RxHamburgerMenu className='h-7 w-7'/>}
                 </div>
+                )}
 
                 {isHeroPage && (
                 <ul className={`md:flex md:items-center md:justify-center md:py-0 py-12 md:pl-10 absolute md:static bg-primary-blue md:z-auto z-[-1] left-0 w-full xl:space-x-6 xl:text-[16px] text-[18px] md:space-x-3 space-y-4 md:space-y-0 font-medium md:w-auto transition-all duration-500 ease-in shadow-lg md:shadow-none ${toggleMenu ? 'top-10' : 'top-[-490px]'}`}>
